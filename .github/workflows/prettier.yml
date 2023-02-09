@@ -1,0 +1,13 @@
+name: Run Frontend Tests
+run-name: Running Frontend Tests
+on: [push]
+jobs:
+  Frontend-Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Run tests
+        working-directory: ${{ github.workspace }}/client
+        run: |
+          npm run prettier-check
