@@ -1,8 +1,8 @@
-name: Run Frontend Tests
-run-name: Running Frontend Tests
+name: Run Prettier Check
+run-name: Running Prettier Check
 on: [push]
 jobs:
-  Frontend-Tests:
+  Prettier-Tests:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
